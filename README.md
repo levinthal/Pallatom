@@ -37,7 +37,7 @@ To set up the environment for running Pallatom, follow these steps:
 To run the Pallatom model sampling process, use the `pallatom.py` script. Below is an example of how to use the script with command-line arguments:
 
 ```bash
-python pallatom.py --savepath ./results --L 120 --batch_num 4 --cuda_devices 0 --t_min 0.01 --t_max 1.0 --gamma 0.2 --step_scale 2.25 --T 200 --rounds 10
+python pallatom.py --savepath ./results --L 100 --cuda_devices 0 --t_min 0.01 --t_max 1.0 --gamma 0.2 --step_scale 2.25 --T 200 --rounds 10
 ```
 
 ### Parameters:
