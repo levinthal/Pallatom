@@ -31,6 +31,25 @@ To set up the environment for running Pallatom, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
+If you encounter compatibility issues with higher CUDA versions, JAX 0.3.25, and Python 3.7, we offer the following solution using Python 3.10 and JAX with CUDA 12.6:
+
+Create and activate a conda environment:
+
+```bash
+conda create --name pallatom python=3.10
+conda activate pallatom
+```
+Install basic dependencies:
+
+```bash
+pip install biopython==1.79 dm-tree==0.1.8 chex==0.1.86 dm-haiku==0.0.12 dm-tree==0.1.8 immutabledict==2.0.0 ml-collections==0.1.0 numpy==1.24.3 pandas==2.0.3 scipy==1.11.1 tensorflow-cpu==2.16.1 rdkit einops tqdm
+```
+
+Install JAX with CUDA support:
+
+```bash
+pip install "jax[cuda]"==0.4.34 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+```   
 
 ## Usage
 
