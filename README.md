@@ -78,6 +78,8 @@ python pallatom.py --savepath ./results --L 100 --cuda_devices 0 --t_min 0.01 --
 
 The results, including the generated sequences in FASTA format and protein structures in PDB format, will be saved in the specified `savepath` directory.
 
+## Data Process
+In `./db_scripts/pipeline.py`, we provide the training data processing pipeline, including metric calculation and filtering, deduplication, and final clustering.
 
 ## Citation
 
